@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="main.css"/>
+
+</head>
+
+<script>
+	
+	// Fonksiyon tanımlamak
+	function ismimisoyle(isim) {
+
+		// Ekranda bir uyarı göstermek
+		window.alert("Benim ismim " + isim);
+
+	}
+
+	// Fonksiyonu çağırmak
+	ismimisoyle("Hakan");
+
+	// Fonksiyon tanımlamak
+	function toplama(a,b) {
+
+		// Ekranda bir uyarı göstermek
+		window.alert(a + b);
+	}
+
+	function cikartma(a,b) {
+
+		// Ekranda bir uyarı göstermek
+		window.alert(a - b);
+	}
+
+</script>
+
+<body>
+
+<!- Buton oluşturmak, içine yazı yazmak ve fonksiyonu butona basıldığında çalıştırmak ->
+
+<input type="button" value="Toplama Butonu" onclick="toplama(4,5)" />
+
+<input type="button" value="Çıkartma Butonu" onclick="cikartma(10,3)" />
+
+</body>
+
+</html>
