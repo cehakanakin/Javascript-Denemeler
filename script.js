@@ -208,7 +208,7 @@ if (markBMI > johnBMI) {
 /***************
  * The ternary Operater and Switch Statements
  */
-
+/*
 
  // Ternary Operater
 var firstName = 'John';
@@ -219,14 +219,14 @@ age >= 18 ? console.log(firstName + ' drikns beer.')
 
 var drink = age >= 18 ? 'beer' : 'juice';
 console.log(drink);
-
+*/
 
 /* if (age >= 18) {
     var drink = 'beer';
 } else {
     var drink = 'juice';
 } */
-
+/*
 // Switch Statement
 var job = 'instructor';
 
@@ -258,4 +258,74 @@ switch (true) {
         break;    
     default:
         console.log(firstName + ' is a man.');
+}
+*/
+
+
+/*************************
+ * Truthy and Falsy values and equality operators
+ */
+
+// falsy values: undefined, null, 0, '', NaN
+// truthy values: NOT falsy values
+/*
+var height;
+height = 23;
+
+if (height || height === 0) {
+    console.log('Variable is defined');
+} else {
+    console.log('Variable has NOT been defined');
+}
+
+
+// Equality operators
+if (height == '23') {
+    console.log('The == operator does type coercion!');
+}
+*/
+
+var totalJohn, totalMike, averageJohn, averageMike, totalMary, averageMary, winnerAverage;
+
+totalJohn = 110 + 120 + 103;
+totalMike = 116 + 94 + 123;
+
+averageJohn = totalJohn / 3;
+averageMike = totalMike / 3;
+
+console.log(averageJohn, averageMike);
+
+if (averageJohn > averageMike) {
+    console.log('Team John is the winner with ' + averageJohn + ' average points');
+    winnerAverage = averageJohn;
+} else if (averageMike > averageJohn)  {
+    console.log('Team Mike is the winner with ' + averageMike + ' average points');
+    winnerAverage = averageMike;
+} else if (averageJohn === averageMike) {
+    console.log('It\'s draw with equal ' + averageJohn + ' points.');
+    winnerAverage = averageMike;
+}
+
+totalMary = 97 + 134 + 105;
+averageMary = totalMary / 3;
+
+console.log(averageMary, winnerAverage);
+
+if (averageMary > winnerAverage) {
+    console.log('Team Mary is the winner with ' + averageMary + ' average points');
+} else if (winnerAverage > averageMary)  {
+    console.log('Team Mike is the winner with ' + winnerAverage + ' average points');
+} else if (averageMary === winnerAverage) {
+    console.log('It\'s draw with equal ' + averageJohn + ' points.');
+} 
+
+
+if (averageJohn > averageMike && averageJohn > averageMary) {
+    console.log('John\'s team is the winner with ' + averageJohn + ' average points.');
+} else if (averageMike > averageJohn && averageMike > averageMary) {
+    console.log('Mike\'s team is the winner with ' + averageJohn + ' average points.');
+} else if (averageMary > averageJohn && averageMary > averageMike) {
+    console.log('Mary\'s team is the winner with ' + averageJohn + ' average points.');
+} else {
+    console.log('It\'s draw with equal ' + averageJohn + ' points.');
 }
