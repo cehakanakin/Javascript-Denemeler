@@ -85,7 +85,7 @@ console.log(typeof x);
 /*************************
  * Operator precedence
  */
-
+/*
 var now = 2018;
 var yearJohn = 1989;
 var fullAge = 18;
@@ -116,3 +116,76 @@ console.log(x);
 
 x++;
 console.log(x);
+*/
+
+/**************
+ * CODING CHALLENGE 1
+ */
+/*
+var markMass, markHeight, johnMass, johnHeight, markBMI, johnBMI, isMarkBmiHeigher;
+
+markMass = 78; // kg
+markHeight = 1.69; //  meter
+johnMass = 92;
+johnHeight = 1.95;
+
+// BMI Formula is BMI = mass / height^2 = mass / (height * height).
+
+markBMI = markMass / (markHeight * markHeight);
+johnBMI = johnMass / (johnHeight * johnHeight);
+
+console.log(markBMI, johnBMI);
+
+isMarkBmiHeigher = markBMI > johnBMI;
+
+console.log('Is Mark\'s BMI higher than Jhons\'s BMI? ' + isMarkBmiHeigher);
+*/
+
+/************************
+ * If else statements
+ */
+
+var firstName = 'John';
+var civilStatus = 'single';
+
+if (civilStatus === 'married') {
+    console.log(firstName + ' is married.');
+} else {
+    console.log(firstName + ' will hopefully marry soon :)');
+}
+
+var isMarried = true;
+if (isMarried) {
+    console.log(firstName + ' is married.');
+} else {
+    console.log(firstName + ' will hopefully marry soon :)');
+}
+
+
+var markMass, markHeight, johnMass, johnHeight, markBMI, johnBMI, isMarkBmiHeigher;
+
+markMass = 78; // kg
+markHeight = 1.69; //  meter
+johnMass = 92;
+johnHeight = 1.95;
+
+// BMI Formula is BMI = mass / height^2 = mass / (height * height).
+
+markBMI = markMass / (markHeight * markHeight);
+johnBMI = johnMass / (johnHeight * johnHeight);
+
+if (markBMI > johnBMI) {
+    console.log('Mark\'s BMI is higher than John\'s.');
+} else {
+    console.log('John\'s BMI is higher than Mark\'s.');
+}
+
+// isMarkBmiHeigher = markBMI > johnBMI;
+
+// console.log('Is Mark\'s BMI higher than Jhons\'s BMI? ' + isMarkBmiHeigher);
+
+
+
+
+
+
