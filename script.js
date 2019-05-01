@@ -24,10 +24,11 @@ var johnMark = 'John and Mark';
 var if = 23;
 */
 
+
 /*************************
  * Variable mutation and type coercion
  */
-
+/*
 var firstName = 'John';
 var age = 28;
 
@@ -47,3 +48,71 @@ alert(firstName + ' is a ' + age + ' year old ' + job + '. Is he married? ' + is
 
 var lastName = prompt('What is his last name?');
 console.log(firstName + ' ' + lastName);
+*/
+
+/*************************
+ * Basic Operators
+ */
+/*
+var year, yearJohn, yearMark, ageJohn, ageMark;
+year = 2019;
+ageJohn = 28;
+ageMark = 33;
+
+// Math Operators
+yearJohn = year - ageJohn;
+yearMark = year - ageMark;
+
+console.log(yearJohn);
+console.log(year + 2);
+console.log(year * 2);
+console.log(year / 10);
+
+
+// Logical operators
+var johnOlder = ageJohn > ageMark;
+
+console.log(johnOlder);
+
+// typeof operator
+console.log(typeof johnOlder);
+console.log(typeof ageJohn);
+console.log(typeof 'Mark is older then John');
+var x;
+console.log(typeof x);
+*/
+
+/*************************
+ * Operator precedence
+ */
+
+var now = 2018;
+var yearJohn = 1989;
+var fullAge = 18;
+
+// Multiple operators
+var isFullAge = now - yearJohn >= fullAge; // true
+console.log(isFullAge);
+
+// Grouping
+var ageJohn = now - yearJohn;
+var ageMark = 35;
+var average = (ageJohn + ageMark) / 2;
+console.log(average);     
+
+// Multiple assignments
+var x, y;
+
+x = y = (3 + 5) * 4 - 6; // 26
+console.log(x, y);
+
+// More operators
+// x = x * 2;
+x *= 2;
+console.log(x);
+
+x += 10;
+console.log(x);
+
+x++;
+console.log(x);
