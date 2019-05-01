@@ -144,7 +144,7 @@ console.log('Is Mark\'s BMI higher than Jhons\'s BMI? ' + isMarkBmiHeigher);
 /************************
  * If else statements
  */
-
+/*
 var firstName = 'John';
 var civilStatus = 'single';
 
@@ -183,9 +183,79 @@ if (markBMI > johnBMI) {
 // isMarkBmiHeigher = markBMI > johnBMI;
 
 // console.log('Is Mark\'s BMI higher than Jhons\'s BMI? ' + isMarkBmiHeigher);
+*/
 
 
+/******************
+ * Boolean Logic
+ */
+/*
+ var firstName = 'John';
+ var age = 20;
+
+ if (age < 13) {
+     console.log(firstName + ' is a boy.');
+ } else if (age >= 13 && age < 20) { // Between 13 and 20
+    console.log(firstName + ' is a teenager.');
+ } else if (age >= 20 && age < 30) {
+    console.log(firstName + ' is a young man.');
+ } else {
+    console.log(firstName + ' is a man.');
+ }
+*/
 
 
+/***************
+ * The ternary Operater and Switch Statements
+ */
 
 
+ // Ternary Operater
+var firstName = 'John';
+var age = 22;
+
+age >= 18 ? console.log(firstName + ' drikns beer.')
+: console.log(firstName + ' drinks juice.');
+
+var drink = age >= 18 ? 'beer' : 'juice';
+console.log(drink);
+
+
+/* if (age >= 18) {
+    var drink = 'beer';
+} else {
+    var drink = 'juice';
+} */
+
+// Switch Statement
+var job = 'instructor';
+
+switch (job) {
+    case 'teacher':
+    case 'instructor':
+        console.log(firstName + ' teaches kids how to code.');
+        break;
+    case 'driver':
+        console.log(firstName + ' drives an uber in Lisbon.');
+        break;
+    case 'designer':
+        console.log(firstName + ' designs beautiful websites.');
+        break;
+    default:
+        console.log(firstName + ' does something else.');
+}
+
+
+switch (true) {
+    case age < 13:
+        console.log(firstName + ' is a boy.');
+        break;
+    case age >= 13 && age < 20:
+        console.log(firstName + ' is a teenager.');
+        break;
+    case age >= 20 && age < 30:
+        console.log(firstName + ' is a young man.');
+        break;    
+    default:
+        console.log(firstName + ' is a man.');
+}
