@@ -2,7 +2,7 @@
  * Variables and data types
  */
 
- /*
+/*
 var firstName = 'John';
 console.log(firstName);
 
@@ -390,7 +390,7 @@ yearsUntilRetirement(1969, 'Jane');
 /**********************
  * Arrays
  */
-
+/*
  // Initialize new array
  var names = ['John', 'Mark', 'Jane'];
  var years = new Array(1990, 1969, 1948);
@@ -416,3 +416,29 @@ console.log(john.indexOf(1990));
 
 var isDesigner = john.indexOf('designer') === -1 ? 'John is NOT a designer' : 'John IS a designer';
 console.log(isDesigner);
+*/
+
+/********************
+ * CODING CHALLENGE
+ */
+
+function calculateTip(billAmount) {
+    var percentage;
+    if (billAmount <= 50) {
+        percentage = .2;
+    } else if (billAmount > 50 && billAmount < 200) {
+        percentage = .15;
+    } else if (billAmount >= 200) {
+        percentage = .1;
+    }
+ return percentage * billAmount;
+}
+
+var bills = [124, 48, 268];
+var tips = [calculateTip(bills[0]),
+                  calculateTip(bills[1]),
+                  calculateTip(bills[2])];
+var finalValues = [bills[0] + tips[0],
+                              bills[1] + tips[1],
+                              bills[2] + tips[2]];
+console.log(finalValues);
