@@ -421,7 +421,7 @@ console.log(isDesigner);
 /********************
  * CODING CHALLENGE
  */
-
+/*
 function calculateTip(billAmount) {
     var percentage;
     if (billAmount <= 50) {
@@ -442,3 +442,88 @@ var finalValues = [bills[0] + tips[0],
                               bills[1] + tips[1],
                               bills[2] + tips[2]];
 console.log(finalValues);
+*/
+
+/**************
+ * Object and properties
+ */
+/*
+ // Object Literal
+var john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    birthYear: 1990,
+    family: ['Jane', 'Mark', 'Bob', 'Emily'],
+    job: 'teacher',
+    isMarried: false
+}
+console.log(john.firstName);
+console.log(john['lastName']);
+var x  = 'birthYear';
+console.log(john[x]);
+
+// Mutate data
+john.job = 'designer';
+john['isMarried'] = true;
+
+console.log(john);
+
+// New object syntax
+var Jane = new Object();
+Jane.firstName = 'Jane';
+Jane.birthYear = 1969;
+Jane['lastName'] = 'Smith';
+console.log(Jane);
+*/
+
+/*******************
+ * Objects and methods
+ */
+/*
+var john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    birthYear: 1992,
+    family: ['Jane', 'Mark', 'Bob', 'Emily'],
+    job: 'teacher',
+    isMarried: false,
+    calcAge: function (birthYear) {
+        this.age = 2019 - this.birthYear;
+    }
+};
+
+john.calcAge();
+console.log(john);
+*/
+
+/******************
+ * Coding Challenge
+ */
+
+var Mark = {
+    fullName: 'Mark',
+    mass: 110,
+    height: 1.95,
+    calcBMI: function () {
+        this.BMI = this.mass / (this.height * this.height);
+        return this.BMI;
+    }
+};
+
+var John = {
+    fullName: 'John',
+    mass: 78,
+    height: 1.69,
+    calcBMI: function () {
+        this.BMI = this.mass / (this.height * this.height);
+        return this.BMI;
+    }
+};
+
+if (John.calcBMI() > Mark.calcBMI()) {
+    console.log(John.fullName + '\'s BMI (' + John.BMI + ') is higher than' + Mark.fullName + '\'s BMI (' + Mark.BMI + ').');
+} else if (Mark.calcBMI() > John.calcBMI()) {
+    console.log(Mark.fullName + '\'s BMI (' + Mark.BMI + ') is higher than' + John.fullName + '\'s BMI (' + John.BMI + ').');
+} else {
+    console.log(Mark.fullName + '\'s BMI (' + Mark.BMI + ') and ' + John.fullName + '\'s BMI (' + John.BMI + ') is equal.');
+}
